@@ -1,0 +1,37 @@
+---
+import Card from './Card.astro'
+
+const featuresData = [
+  {title: 'Cross-Border Payments', body: ' Our platform enables seamless and secure money transfers across borders, providing individuals and businesses with a convenient and efficient way to send and receive funds globally.'},
+  {title: 'Business Payment Management', body: ' Our platform integrates with various financial systems, providing businesses with real-time visibility and control over their international payments. '},
+  {title: 'Real-Time Payment Tracking', body: 'At FinEdge, we provide our users with real-time payment tracking capabilities.  '}
+];
+---
+
+<section class="features">
+  <div class="container">
+   {featuresData.map(feature => (
+      <Card>
+        <h3>{feature.title}</h3>
+        <p>{feature.body}</p>
+      </Card>
+    ))}
+  </div>
+</section>
+
+<style>
+  .features .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 0 20px;
+    margin: 30px auto;
+  }
+
+  @media (max-width: 500px) {
+  .features .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>

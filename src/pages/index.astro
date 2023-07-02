@@ -1,0 +1,67 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Showcase from '../components/Showcase.astro';
+import Features from '../components/Features.astro';
+import Tabs from '../components/Tabs.astro';
+---
+
+<Layout>
+	<Showcase showExtra={true} />
+	
+	
+	<section class="page-content">
+		<div class="container">
+			<h2>About Us</h2>
+			<div class="content">
+			  <p>
+				<span class="highlight">FinEdge</span> is a cutting-edge fintech startup focused on transforming cross-border payments. We believe in a world where geographic boundaries should not limit individuals and businesses from making seamless transactions.
+			  </p>
+			</div>
+		  </div>
+		
+			<Tabs headings={['Co-Founder & CEO', 'Co-Founder & CTO', 'CMO']} contents={['Shubham Kumar ', 'Sanket Sharan', 'Pawan Kumar']} />
+
+		</div>
+		<div class="container">
+			<h2>Services Provided</h2>
+			<ul class="service-list">
+				<li class="colorful-item">Digital Payments</li><br>
+				<li class="colorful-item">Money Transfer and Remittances</li><br>
+				<li class="colorful-item">Personal Finance and Budgeting</li><br>
+				<li class="colorful-item">Online Lending and Peer-to-Peer Lending</li><br>
+				<li class="colorful-item">Financial Planning and Wealth Management</li><br>
+			  </ul>
+			  
+		</div><br>
+
+		
+
+
+		<hr>
+		<div class="container">
+			<h2>Contact Us</h2>
+			
+
+			<form>
+				<div>
+				  <label for="name">Name:</label><br>
+				  <input type="text" id="name" name="name" required>
+				</div>
+			
+				<div>
+				  <label for="email">Email:</label><br>
+				  <input type="email" id="email" name="email" required>
+				</div>
+			
+				<div>
+				  <label for="message">Message:</label><br>
+				  <textarea id="message" name="message" required></textarea>
+				</div>
+			
+				<button type="submit">Send Message</button>
+			  </form>
+
+
+		</div>
+	</section>
+</Layout>
