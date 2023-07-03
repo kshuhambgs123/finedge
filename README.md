@@ -1,7 +1,7 @@
 # Astro 
 
 Website built with Astro 
-<img src="/src/images/screen.png">
+<img src="/src/images/image.jpeg">
 
 ## Usage
 
