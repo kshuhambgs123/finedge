@@ -1,7 +1,6 @@
-# Astro Crash Course
+# Astro 
 
-Website built with Astro from my [YouTube crash course](https://youtu.be/Oi9z5gfIHJs).
-
+Website built with Astro 
 <img src="/src/images/screen.png">
 
 ## Usage
